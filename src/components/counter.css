@@ -1,0 +1,24 @@
+/* CountdownTimer.css */
+.countdown-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #0d0f20;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-item {
+  margin: 0 5px;
+  font-size: 24px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-label {
+  font-size: 16px;
+}
