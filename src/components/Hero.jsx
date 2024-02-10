@@ -28,7 +28,7 @@ const Hero = () => {
             <div 
             class="apply-button " 
             data-hackathon-slug="hactrix-2-0" 
-            data-button-theme="dark-inverted" >
+            data-button-theme="light" >
             </div>
      </div>
           
