@@ -27,7 +27,7 @@ const Hero = () => {
           <div class="button-container flex  items-center justify-center relative top-5 rounded-mg right-60 pr-56">
             <div 
             class="apply-button " 
-            data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+            data-hackathon-slug="hactrix-2-0" 
             data-button-theme="light" >
             </div>
      </div>
