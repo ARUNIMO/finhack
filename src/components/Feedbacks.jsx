@@ -5,9 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
-import poly from "../assets/poly.png" 
-import dev from "../assets/dev.png" 
-import eth from "../assets/eth.png" 
+
 
 const FeedbackCard = ({
   index,
