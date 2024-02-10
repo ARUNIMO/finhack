@@ -21,7 +21,7 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Code for a Cause, Hack for Change <br className='sm:block hidden' />
-            Your Genious, Our AI - Hack the Future!
+            Your Genious, Our AI - Hack the Future! arun
             
           </p>
           <div class="button-container flex  items-center justify-center relative top-5 rounded-mg right-60 pr-56">
