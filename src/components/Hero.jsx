@@ -21,14 +21,14 @@ const Hero = () => {
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Code for a Cause, Hack for Change <br className='sm:block hidden' />
-            Your Genious, Our AI - Hack the Future! arun
+            Your Genious, Our AI - Hack the Future! 
             
           </p>
           <div class="button-container flex  items-center justify-center relative top-5 rounded-mg right-60 pr-56">
             <div 
             class="apply-button " 
             data-hackathon-slug="hactrix-2-0" 
-            data-button-theme="dark" >
+            data-button-theme="dark-inverted" >
             </div>
      </div>
           
