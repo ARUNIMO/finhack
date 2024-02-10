@@ -5,33 +5,27 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import poly from "../assets/poly.png" 
+import dev from "../assets/dev.png" 
+import eth from "../assets/eth.png" 
 
 const FeedbackCard = ({
   index,
-  testimonial,
-  name,
-  designation,
-  company,
   image,
+  altText,
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
   >
-    
-
+    {/* Image with Alt Text */}
     <div className='mt-1'>
-      <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
+      <img src={image} alt={altText} />
+    </div>
 
-      <div className='mt-7 flex justify-between items-center gap-1'>
-        <div className='flex-1 flex flex-col'>
-          <p className='text-white font-medium text-[16px]'>
-            <span className='blue-text-gradient'>@</span> {name}
-          </p>
-          
-        </div>
-
-        
+    <div className='mt-7 flex justify-between items-center gap-1'>
+      <div className='flex-1 flex flex-col'>
+        {/* Additional content can be added here */}
       </div>
     </div>
   </motion.div>
@@ -44,14 +38,28 @@ const Feedbacks = () => {
         className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>We provide. They help.</p>
-          <h2 className={styles.sectionHeadText}>Sponsers.</h2>
+          <p className={styles.sectionSubText}></p>
+          <h2 className={styles.sectionHeadText}>Sponsors</h2>
         </motion.div>
       </div>
-      <div className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7`}>
-        {testimonials.map((testimonial, index) => (
-          <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
+      <div className={`-mt-20 pb-14 ${styles.paddingX}`}>
+        <div className='flex flex-row gap-7'>
+          <FeedbackCard
+            index={0}
+            image={dev}
+            altText="DEVFOLIO LOGO"
+          />
+          <FeedbackCard
+            index={1}
+            image={poly}
+            altText="POLYGON LOGO"
+          />
+          <FeedbackCard
+            index={2}
+            image={eth}
+            altText="ETHINDIA LOGO"
+          />
+        </div>
       </div>
     </div>
   );
